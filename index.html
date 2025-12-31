@@ -24,6 +24,23 @@
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#certifications" class="nav-link">Certifications</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+
+          <!-- GitHub Button -->
+          <li>
+            <a href="https://github.com/vedantmishra06" target="_blank" class="social-btn github-btn">
+              <img src="github.svg" class="social-icon" alt="GitHub">
+              GitHub
+            </a>
+          </li>
+
+          <!-- LinkedIn Button -->
+          <li>
+            <a href="https://www.linkedin.com/in/vedant-mishra-b629612b7/" target="_blank" class="social-btn linkedin-btn">
+              <img src="Portfolio/linkedin-svgrepo-com.svg" class="social-icon" alt="LinkedIn">
+              LinkedIn
+            </a>
+          </li>
+
         </ul>
       </nav>
     </div>
@@ -32,7 +49,7 @@
   <main>
 
     <!-- About -->
-    <section id="about" class="container hero">
+    <section id="about" class="container hero animate-on-scroll">
       <div class="hero-left card profile-card">
         <div class="profile-row">
           <img src="profile.jpeg" alt="Vedant Mishra — profile" class="profile-photo">
@@ -40,19 +57,26 @@
             <h2 class="name">Vedant Mishra</h2>
             <p class="role">Tech Enthusiast | CSE Student | ML & Web Developer</p>
 
-            <a class="linkedin" href="https://www.linkedin.com/in/vedant-mishra-b629612b7/" target="_blank">
-              Connect on LinkedIn
-            </a>
+            <!-- Social Buttons below profile -->
+            <div class="profile-social">
+              <a href="https://github.com/vedantmishra06" target="_blank" class="social-btn github-btn">
+                <img src="github.svg" class="social-icon" alt="GitHub">
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/vedant-mishra-b629612b7/" target="_blank" class="social-btn linkedin-btn">
+                <img src="linkedin.svg" class="social-icon" alt="LinkedIn">
+                LinkedIn
+              </a>
+            </div>
+
           </div>
         </div>
 
-        <div class="about-text">
-          <p class="tagline">
-            B.Tech CSE student skilled in Python, C++, ML and Web Development.
-            Strong problem-solving, teamwork, and project-building abilities with
-            interest in AI and real-world tech solutions.
-          </p>
-        </div>
+        <p class="tagline">
+          B.Tech CSE student skilled in Python, C++, ML and Web Development.
+          Strong problem-solving, teamwork, and project-building abilities with
+          interest in AI and real-world tech solutions.
+        </p>
       </div>
 
       <div class="hero-right card quick-stats">
@@ -60,7 +84,7 @@
         <ul>
           <li><strong>Course:</strong> B.Tech CSE — 2024-2028</li>
           <li><strong>College:</strong> VIT Bhopal University</li>
-          <li><strong>CGPA:</strong>  (Current)</li>
+          <li><strong>CGPA:</strong> 7.46 (Current)</li>
           <li><strong>Location:</strong> Bhopal, Madhya Pradesh</li>
         </ul>
 
@@ -72,41 +96,27 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="container">
+    <section id="skills" class="container animate-on-scroll">
       <h2 class="section-title">Skills</h2>
 
       <div class="skills-grid">
+        <div class="skill card"><h4>Programming</h4>
+          <p>Python • C++ • Java • HTML • CSS • JavaScript</p></div>
 
-        <div class="skill card">
-          <div class="skill-head">
-            <h4>Programming</h4>
-          </div>
-          <p class="skill-small">Python • C++ • Java • HTML • CSS • JavaScript</p>
-        </div>
+        <div class="skill card"><h4>Core CS</h4>
+          <p>DSA • OOP • OS Basics • CN • DBMS(SQL Basics)</p></div>
 
-        <div class="skill card">
-          <div class="skill-head"><h4>Core CS</h4></div>
-          <p class="skill-small">DSA • OOP • OS Basics • CN • DBMS(SQL Basics)</p>
-        </div>
+        <div class="skill card"><h4>ML & AI</h4>
+          <p>ML Basics • Data Viz • NLP (OCR Concepts) • Grade Prediction</p></div>
 
-        <div class="skill card">
-          <div class="skill-head"><h4>ML & AI</h4></div>
-          <p class="skill-small">
-            ML Basics (Supervised/Unsupervised), Data Visualization,
-            Grade Prediction, NLP (OCR Concepts)
-          </p>
-        </div>
-
-        <div class="skill card">
-          <div class="skill-head"><h4>Tools</h4></div>
-          <p class="skill-small">Flask, CustomTkinter, Git, VS Code, Jupyter, PyCharm</p>
-        </div>
+        <div class="skill card"><h4>Tools</h4>
+          <p>Flask • CustomTkinter • Git • VS Code • Jupyter • PyCharm</p></div>
 
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="container">
+    <section id="projects" class="container animate-on-scroll">
       <h2 class="section-title">Projects</h2>
 
       <div class="projects-grid">
@@ -115,66 +125,52 @@
         <article class="project-card card">
           <img src="project.jpeg" class="project-thumb">
           <div class="project-content">
-            <h3>Smart Study Assistant</h3>
-            <p class="muted">
-              An AI-based learning assistant with OCR, NLP and ML, enabling
-              automated note organization and grade prediction.
-            </p>
-
-            <ul class="project-tags">
-              <li>Python</li><li>Flask</li><li>ML</li><li>OCR</li>
-            </ul>
-
-            <div class="project-cta">
-              <a href="https://github.com/vedantmishra06" class="btn btn-ghost" target="_blank">Source</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project-card card">
-          <img src="project2.jpeg" class="project-thumb">
-          <div class="project-content">
             <h3>Digital Declutterer</h3>
-            <p class="muted">
-              Subscription manager tool for tracking total spending,
-              reminders and duplicate subscription detection.
+            <p>
+              Subscription cost tracking, duplicate detection & renewal reminders.
             </p>
-
             <ul class="project-tags">
-              <li>Python</li><li>CTk</li><li>SQLite</li>
+              <li>Python</li><li>CTK</li><li>SQLite</li><li>Gmail_API</li>
             </ul>
-
-            <div class="project-cta">
-              <a href="https://github.com/vedantmishra06" class="btn btn-ghost" target="_blank">Source</a>
-            </div>
+            <a href="https://github.com/yras279/digital-declutter" target="_blank" class="btn btn-ghost">Source</a>
           </div>
         </article>
+
+
 
       </div>
     </section>
 
     <!-- Certifications -->
-    <section id="certifications" class="container">
+    <section id="certifications" class="container animate-on-scroll">
       <h2 class="section-title">Certifications</h2>
 
       <ul class="card" style="padding:15px;list-style:disc;margin-left:20px;">
-        <li>Cloud Computing Basics — NPTEL</li>
-        <li>Networking — Google Coursera</li>
-        <li>MATLAB Programming</li>
+        <li>
+          Cloud Computing Basics — NPTEL
+          <a href="https://internalapp.nptel.ac.in/NOC/NOC25/SEM1/Ecertificates/106/noc25-cs11/Course/NPTEL25CS11S95480008504256668.pdf" target="_blank" class="cert-link">View</a>
+        </li>
+        <li>
+          Bits & Bytes of Networking — Google Coursera
+          <a href="https://www.coursera.org/account/accomplishments/verify/87XPUP4T8X6O" target="_blank" class="cert-link">Verify</a>
+        </li>
+        <li>
+          MATLAB Programming
+          <a href="https://prourls.link/NVUHow" target="_blank" class="cert-link">View</a>
+        </li>
       </ul>
     </section>
 
-    <!-- Canvas Animation -->
-    <section class="container">
+    <!-- Canvas Section -->
+    <section class="container animate-on-scroll">
       <h2 class="section-title">Interactive Canvas</h2>
       <div class="card canvas-wrap">
-        <canvas id="myCanvas" width="780" height="120"></canvas>
+        <canvas id="myCanvas"></canvas>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container">
+    <section id="contact" class="container animate-on-scroll">
       <h2 class="section-title">Contact</h2>
 
       <div class="contact-grid">
@@ -183,22 +179,20 @@
           <p><strong>Phone:</strong> <a href="tel:+917565842406">7565842406</a></p>
           <p><strong>Email:</strong> <a href="mailto:vedantmishra0605@gmail.com">vedantmishra0605@gmail.com</a></p>
           <p><strong>GitHub:</strong> <a href="https://github.com/vedantmishra06" target="_blank">github.com/vedantmishra06</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vedant-mishra-b629612b7/" target="_blank">View Profile</a></p>
         </aside>
 
         <form id="contactForm" class="contact-form card">
           <label>Name</label>
-          <input id="name" type="text" placeholder="Your name" required>
+          <input id="name" type="text" required>
 
           <label>Email</label>
-          <input id="email" type="email" placeholder="you@example.com" required>
+          <input id="email" type="email" required>
 
           <label>Message</label>
-          <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+          <textarea id="message" rows="5" required></textarea>
 
-          <button class="btn btn-primary" type="submit">Send Message</button>
+          <button class="btn btn-primary" type="submit">Send</button>
         </form>
-
       </div>
     </section>
 
@@ -206,7 +200,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2025 <strong>Vedant Mishra</strong> — Built with passion.</p>
+      © 2025 <strong>Vedant Mishra</strong> — Built with passion ✨
     </div>
   </footer>
 
